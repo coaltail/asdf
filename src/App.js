@@ -53,11 +53,12 @@ function App() {
   }
   return (
     <div className="h-screen w-full">
-    <div className='w-full md:flex md:justify-center md:items-center grid grid-cols-2 gap-0 p-0 mx-auto items-center justify-center content-center'>
+    <h1 className='text-2xl font-bold flex justify-center items-center my-4'>Generiranje gesta</h1>
+    <div className='w-full md:flex md:justify-center container md:items-center grid grid-cols-2 gap-0 p-0 mx-auto items-center justify-center content-center'>
     {data.map((t)=>{
       return(
 
-        <div className="images h-400">
+        <div className="images h-400 mx-auto flex justify-center items-center">
           <div className="gallery">
             <img src={t.image} className='h-[200px]' alt="Cinque Terre"/>
           <div class="desc font-bold">{t.description}</div>
@@ -67,7 +68,7 @@ function App() {
     })}
       </div>
       <div className="flex justify-center items-center self-center w-full">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleShuffle}>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-6 py-2 px-4 rounded" onClick={handleShuffle}>
         Generiraj nove geste
       </button>
       </div>
