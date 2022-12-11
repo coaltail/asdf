@@ -33,7 +33,7 @@ const geste = [
   {description: 'Pozdrav', image:images[0]},
   {description: 'Poziv', image: images[1]},
   {description: 'Odbijanje', image : images[2]},
-  {description: 'Odobravanje', image: images[3]}
+  {description: 'Prihvaćanje', image: images[3]}
 ]
 
 shuffle(geste);
